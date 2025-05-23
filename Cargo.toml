@@ -13,7 +13,7 @@ exclude = ["media/", "!media/readme/", ".github/"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-egui = { version = "0.31.0", default-features = false }
+egui = { git = "https://github.com/mikedilger/egui", rev = "20d9aaf91f3f792c53ce252fd8bc8cc4bdc51f78", default-features = false }
 # fetch user folders
 directories = "6.0"
 # canonicalize paths
@@ -30,7 +30,7 @@ image-meta = { version = "0.1.2", optional = true }
 chrono = { version = "0.4.39", optional = true }
 
 [dev-dependencies]
-eframe = { version = "0.31.0", default-features = false, features = [
+eframe = { git = "https://github.com/mikedilger/egui", rev = "20d9aaf91f3f792c53ce252fd8bc8cc4bdc51f78", default-features = false, features = [
     "glow",
     "persistence",
     "wayland",
